@@ -24,10 +24,13 @@
             <li>
               <a href="#openModal">Login</a>
             </li>
+            <li>
+              <a href="#openRegisterModal">Registrar</a>
+            </li>
           </ul>
         </div>
       </nav>
-      <h1>¡Bienvenido!</h1>
+      <h1 id="welcomeHeader">¡Bienvenido!</h1>
       <div class="server-address-clipboard-icon">
         <button class="boton crear-instancia" id="crear-instancia">Crear Instancia</button>
         <button class="boton iniciar-instancia" id="iniciar-instancia">Iniciar Instancia</button>
@@ -38,7 +41,7 @@
         <p style="margin: 0px;"></p>
         <div class="server-address-clipboard">
           <div class="server-address-clipboard-icon"><img src="src/img/svgviewer-output.svg" /></div>
-          <div class="server-address">Aqui va el dns</div><button id="button"
+          <div class="server-address" id="dns">Aqui va el dns</div><button id="button"
             class="server-address-clipboard-button">copiar</button>
         </div>
       </div>
@@ -60,6 +63,26 @@
         <div class="button-container">
           <button type="submit" class="login-button" id="login">Login</button>
           <button type="button" class="login-button" id="showData">ShowData</button>
+          <a href="#close" title="Cerrar" class="close">Cerrar</a>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div id="openRegisterModal" class="modalDialog">
+    <div>
+      <h2>Registrar</h2>
+      <form class="register-form" id="registerForm">
+        <div class="input-container">
+          <label for="register-username">Nombre de Usuario</label>
+          <input type="text" id="register-username" name="register-username" placeholder="Ingresa tu nombre de usuario" required>
+        </div>
+        <div class="input-container">
+          <label for="register-password">Contraseña</label>
+          <input type="password" id="register-password" name="register-password" placeholder="Ingresa tu contraseña" required>
+        </div>
+        <div class="button-container">
+          <button type="submit" class="register-button" id="register">Registrar</button>
           <a href="#close" title="Cerrar" class="close">Cerrar</a>
         </div>
       </form>

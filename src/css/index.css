@@ -255,8 +255,9 @@ main {
   background: rgba(0, 0, 0, 0.8);
   z-index: 99999;
   opacity: 0;
-  pointer-events: none;
+  color: black;
   transition: opacity 0.3s ease-in-out;
+  pointer-events: none;
 }
 
 .modalDialog:target {
@@ -265,72 +266,57 @@ main {
 }
 
 .modalDialog > div {
-  width: 90%;
-  max-width: 400px;
+  width: 300px;
   position: relative;
   margin: 10% auto;
   padding: 20px;
-  border-radius: 12px;
   background: #fff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  color: #000;
+  border-radius: 10px;
 }
 
-.login-form .input-container {
-  margin-bottom: 16px;
+.input-container {
+  margin-bottom: 15px;
 }
 
-.login-form label {
+.input-container label {
   display: block;
-  margin-bottom: 8px;
-  font-weight: bold;
+  margin-bottom: 5px;
 }
 
-.login-form input[type="text"],
-.login-form input[type="password"] {
+.input-container input {
   width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+  padding: 8px;
   box-sizing: border-box;
 }
 
 .button-container {
   display: flex;
-  justify-content:space-around ;
+  justify-content: space-between;
   align-items: center;
-  margin-top: 20px;
+}
+
+.login-button, .register-button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.login-button:hover, .register-button:hover {
+  background-color: #45a049;
 }
 
 .close {
-  background: #606061;
-  color: #FFFFFF;
-  line-height: 25px;
   padding: 10px 20px;
-  text-align: center;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 5px;
   text-decoration: none;
-  font-weight: bold;
-  border-radius: 4px;
-  box-shadow: 1px 1px 3px #000;
-  transition: background 0.3s;
 }
 
 .close:hover {
-  background: #333;
-}
-
-.login-button {
-  background-color: blue;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  cursor: pointer;
-  border-radius: 4px;
-  font-size: 16px;
-  line-height: 25px;
-  transition: background 0.3s;
-}
-
-.login-button:hover {
-  background-color: darkblue;
+  background-color: #d32f2f;
 }
