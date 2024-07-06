@@ -320,3 +320,11 @@ main {
 .close:hover {
   background-color: #d32f2f;
 }
+
+.server-address-dropdown select {
+  height: 35px;
+  padding: 5px;
+  font-size: 14px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
